@@ -1,6 +1,8 @@
 {
-  "authToken":{"token":"TYikywhsasgTYkdsd"},
-  "posts": [
+  "authToken": {
+    "token": "TYikywhsasgTYkdsd"
+  },
+  "saveAsset": [
     {
       "id": "e4d7",
       "assetType": "Tata power",
@@ -119,6 +121,20 @@
       "quantity": 23,
       "purchasePrice": 234,
       "date": "2024-11-06"
+    },
+    {
+      "id": "cb1a",
+      "assetType": "Wipro",
+      "quantity": 24,
+      "purchasePrice": 4792,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "d932",
+      "assetType": "NSE",
+      "quantity": 23,
+      "purchasePrice": 23999,
+      "date": "2024-11-06"
     }
   ],
   "assetAllocation": [
@@ -150,7 +166,8 @@
           "quantity": 20,
           "currentValue": 8000
         }
-      ]
+      ],
+      "id": "560e"
     },
     {
       "assetType": "Bonds",
@@ -174,7 +191,8 @@
           "quantity": 150,
           "currentValue": 4500
         }
-      ]
+      ],
+      "id": "5530"
     },
     {
       "assetType": "Real Estate",
@@ -190,7 +208,8 @@
           "location": "San Francisco",
           "currentValue": 15000
         }
-      ]
+      ],
+      "id": "fe2e"
     },
     {
       "assetType": "Commodities",
@@ -208,7 +227,8 @@
           "quantity": 100,
           "currentValue": 3000
         }
-      ]
+      ],
+      "id": "15ff"
     }
   ],
   "marketTrends": [
@@ -219,7 +239,8 @@
       "details": {
         "index": "S&P 500",
         "value": 3800
-      }
+      },
+      "id": "9e7c"
     },
     {
       "date": "2023-01-02",
@@ -228,7 +249,8 @@
       "details": {
         "index": "S&P 500",
         "value": 3781
-      }
+      },
+      "id": "451a"
     },
     {
       "date": "2023-01-03",
@@ -237,7 +259,8 @@
       "details": {
         "index": "S&P 500",
         "value": 3856
-      }
+      },
+      "id": "d664"
     },
     {
       "date": "2023-01-04",
@@ -246,7 +269,8 @@
       "details": {
         "index": "S&P 500",
         "value": 3902
-      }
+      },
+      "id": "4c90"
     },
     {
       "date": "2023-01-05",
@@ -255,7 +279,8 @@
       "details": {
         "index": "S&P 500",
         "value": 3863
-      }
+      },
+      "id": "f0b6"
     },
     {
       "date": "2023-01-06",
@@ -264,7 +289,8 @@
       "details": {
         "index": "S&P 500",
         "value": 3894
-      }
+      },
+      "id": "d1bf"
     },
     {
       "date": "2023-01-07",
@@ -273,7 +299,8 @@
       "details": {
         "index": "S&P 500",
         "value": 3882
-      }
+      },
+      "id": "9836"
     },
     {
       "date": "2023-01-08",
@@ -282,7 +309,8 @@
       "details": {
         "index": "S&P 500",
         "value": 3940
-      }
+      },
+      "id": "65d5"
     },
     {
       "date": "2023-01-09",
@@ -291,7 +319,8 @@
       "details": {
         "index": "S&P 500",
         "value": 3912
-      }
+      },
+      "id": "9f46"
     },
     {
       "date": "2023-01-10",
@@ -300,7 +329,8 @@
       "details": {
         "index": "S&P 500",
         "value": 3951
-      }
+      },
+      "id": "7713"
     }
   ],
   "performanceMetrics": [
@@ -308,61 +338,71 @@
       "metric": "CPU Usage",
       "value": 75,
       "unit": "%",
-      "timestamp": "2023-01-01T10:00:00Z"
+      "timestamp": "2023-01-01T10:00:00Z",
+      "id": "2378"
     },
     {
       "metric": "Memory Usage",
       "value": 60,
       "unit": "%",
-      "timestamp": "2023-01-01T10:00:00Z"
+      "timestamp": "2023-01-01T10:00:00Z",
+      "id": "42bf"
     },
     {
       "metric": "Disk I/O",
       "value": 120,
       "unit": "MB/s",
-      "timestamp": "2023-01-01T10:00:00Z"
+      "timestamp": "2023-01-01T10:00:00Z",
+      "id": "2297"
     },
     {
       "metric": "Network Throughput",
       "value": 300,
       "unit": "Mbps",
-      "timestamp": "2023-01-01T10:00:00Z"
+      "timestamp": "2023-01-01T10:00:00Z",
+      "id": "63f2"
     },
     {
       "metric": "CPU Usage",
       "value": 80,
       "unit": "%",
-      "timestamp": "2023-01-01T11:00:00Z"
+      "timestamp": "2023-01-01T11:00:00Z",
+      "id": "ab52"
     },
     {
       "metric": "Memory Usage",
       "value": 65,
       "unit": "%",
-      "timestamp": "2023-01-01T11:00:00Z"
+      "timestamp": "2023-01-01T11:00:00Z",
+      "id": "6b2b"
     },
     {
       "metric": "Disk I/O",
       "value": 130,
       "unit": "MB/s",
-      "timestamp": "2023-01-01T11:00:00Z"
+      "timestamp": "2023-01-01T11:00:00Z",
+      "id": "8a62"
     },
     {
       "metric": "Network Throughput",
       "value": 320,
       "unit": "Mbps",
-      "timestamp": "2023-01-01T11:00:00Z"
+      "timestamp": "2023-01-01T11:00:00Z",
+      "id": "5bff"
     },
     {
       "metric": "CPU Usage",
       "value": 70,
       "unit": "%",
-      "timestamp": "2023-01-01T12:00:00Z"
+      "timestamp": "2023-01-01T12:00:00Z",
+      "id": "3b64"
     },
     {
       "metric": "Memory Usage",
       "value": 55,
       "unit": "%",
-      "timestamp": "2023-01-01T12:00:00Z"
+      "timestamp": "2023-01-01T12:00:00Z",
+      "id": "4673"
     }
   ],
   "portFolioPerformance": {

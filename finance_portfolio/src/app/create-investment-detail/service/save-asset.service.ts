@@ -10,7 +10,7 @@ export class SaveAssetService {
 
   constructor(private httpsService: HttpClient) {}
   save(data:AssetDetails): Observable<AssetDetails> {
-    return this.httpsService.post<AssetDetails>('http://localhost:3000/posts',data).pipe(
+    return this.httpsService.post<AssetDetails>('http://localhost:3000/saveAsset',data).pipe(
       map((data: AssetDetails) => {
         return data;
       })
