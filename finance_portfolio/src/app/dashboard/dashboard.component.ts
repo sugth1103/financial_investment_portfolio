@@ -38,9 +38,13 @@ export class DashboardComponent implements OnInit {
   
   ngOnInit():void{
     forkJoin([this.assetAllocationService.getAssetAllocation(),this.marketTrendsService.getMarketTrendsData(),this.portFolioPerformanceData.getPortFolioPerformanceData()]).subscribe(([assetAllocationData,marketTrendsData,portFolioPerformanceData]) => {
+      // create bar chart for asset allocation
       this.assetManagementChart(assetAllocationData);
+      // create bar chart for market trends
       this.marketTrendsChart(marketTrendsData);
+      // create bar chart for portfolio performance
       this.portFolioPerformance(portFolioPerformanceData.performanceData);
+      // create bar chart for performance metrics
       this.performanceMetrics();
     });
     
@@ -51,6 +55,7 @@ export class DashboardComponent implements OnInit {
     this.portfolioPerformanceChart = new Chart('portfolioPerformanceChart', {
       type: 'bar',
       data: {
+        // hardcoded this value and not been fetched from db.json due to time constraint
         labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
         datasets: [
           {
@@ -72,16 +77,15 @@ export class DashboardComponent implements OnInit {
       options: {
         maintainAspectRatio: false,
         scales: {
-          // We use this empty structure as a placeholder for dynamic theming.
           x: {title: {
             display: true,
-            text: 'periods' // Name of x-axis
+            text: 'periods'
         }},
           y: {
             beginAtZero: true,
             title: {
               display: true,
-              text: 'Total' // Name of x-axis
+              text: 'Total' 
           },
           }
         }
@@ -121,16 +125,15 @@ export class DashboardComponent implements OnInit {
       },
       options: {
        scales: {
-        // We use this empty structure as a placeholder for dynamic theming.
         x: {title: {
           display: true,
-          text: 'Assets' // Name of x-axis
+          text: 'Assets'
       }},
         y: {
           beginAtZero: true,
           title: {
             display: true,
-            text: 'Shares in Quantity' // Name of x-axis
+            text: 'Shares in Quantity'
         },
         }
       }
@@ -143,10 +146,12 @@ export class DashboardComponent implements OnInit {
     this.performanceMetricsChart = new Chart('performanceMetricsChart', {
       type: 'bar',
       data: {
+         // hardcoded this value and not been fetched from db.json due to time constraint
         labels: ['Apple Inc', 'Microsoft Corp.', 'Amazon.com Inc.', 'Alphapet Inc.'],
         datasets: [
           {
             label: 'Performance Metrics',
+             // hardcoded this value and not been fetched from db.json due to time constraint
             data: [12, 19, 3, 5],
             borderWidth: 1,
           },
@@ -154,16 +159,15 @@ export class DashboardComponent implements OnInit {
       },
       options: {
         scales: {
-          // We use this empty structure as a placeholder for dynamic theming.
           x: {title: {
             display: true,
-            text: 'Assets' // Name of x-axis
+            text: 'Assets' 
         }},
           y: {
             beginAtZero: true,
             title: {
               display: true,
-              text: 'Growth in Percentage' // Name of x-axis
+              text: 'Growth in Percentage'
           },
           }
         }
@@ -192,16 +196,15 @@ export class DashboardComponent implements OnInit {
         }
       },
       scales: {
-        // We use this empty structure as a placeholder for dynamic theming.
         x: {title: {
           display: true,
-          text: 'Monthly' // Name of x-axis
+          text: 'Monthly'
       }},
         y: {
           min: -10,
           title: {
             display: true,
-            text: 'Percentage' // Name of x-axis
+            text: 'Percentage'
         },
         }
       }
