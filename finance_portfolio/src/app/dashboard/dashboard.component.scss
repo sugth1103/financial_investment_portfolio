@@ -3,16 +3,14 @@
     margin: 0;
     padding: 0;
 }
-
+.title {
+    color: rgb(22, 110, 172)
+}
 .container {
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding: 10px;
-    gap: 10px;
-    /* Adds space between rows */
-    align-items: center;
-    /* Center align the rows */
+    gap: 20px;
 }
 
 .row {
@@ -23,7 +21,7 @@
     /* Prevent items from wrapping */
     justify-content: center;
     /* Center align the content */
-    gap: 10px;
+    gap: 20px;
     /* Adds space between items in a row */
 }
 
