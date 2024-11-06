@@ -5,12 +5,13 @@ import { catchError, map, throwError } from 'rxjs';
 
 export const interceptorInterceptor: HttpInterceptorFn = (req, next) => {
   const router = inject(Router);
- const reqWithAuthorisation = req.clone({
+  
+ const authResponse = req.clone({
     setHeaders: {
-      Authorization: `AuthorisationToken-dgsydjhsbdshdusdu`
+      Authorization: localStorage.getItem('authToken') || 'AuthToken'
     }
   });
-  return next(reqWithAuthorisation).pipe(
+  return next(authResponse).pipe(
     map(res => {
       return res;
     }),
