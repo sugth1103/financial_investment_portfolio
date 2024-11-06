@@ -30,19 +30,35 @@
                     }
 
                 </div>
-                <div class="mb-4">
+                <div>
                     <label for="purchasePrice" class="form-label"><strong>Purchase Price<span
-                                class="error">*</span></strong></label>
-                    <input type="number" class="form-control" id="purchasePrice" formControlName="purchasePrice">
-                    @if (assetForm?.get('purchasePrice')?.invalid && assetForm?.get('purchasePrice')?.touched) {
-                    @if (assetForm.get('purchasePrice')?.errors?.['required']) {
-                    <span class="error">Purchase Price is required.</span>
-                    }
-                    @if (assetForm?.get('purchasePrice')?.errors?.['min']) {
-                    <span class="error">Purchase Price must be at least 1.</span>
-                    }
-
-                    }
+                        class="error">*</span></strong></label>
+                        <div>
+                            <mat-form-field appearance="outline">
+                                <input matInput placeholder="Amount" type="number" class="example-right-align" formControlName="purchasePrice">
+                                <span matPrefix class="ps-2">$&nbsp;</span>
+                            </mat-form-field>
+                            @if (assetForm?.get('purchasePrice')?.invalid && assetForm?.get('purchasePrice')?.touched) {
+                            @if (assetForm.get('purchasePrice')?.errors?.['required']) {
+                            <span class="error">Purchase Price is required.</span>
+                            }
+                            @if (assetForm?.get('purchasePrice')?.errors?.['min']) {
+                            <span class="error">Purchase Price must be at least 1.</span>
+                            }
+                        
+                            }
+                        </div>
+                        
+                        <!-- <input type="number" class="form-control" id="purchasePrice" formControlName="purchasePrice">
+                                                                                                                                                                                                                                                                                            @if (assetForm?.get('purchasePrice')?.invalid && assetForm?.get('purchasePrice')?.touched) {
+                                                                                                                                                                                                                                                                                            @if (assetForm.get('purchasePrice')?.errors?.['required']) {
+                                                                                                                                                                                                                                                                                            <span class="error">Purchase Price is required.</span>
+                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                            @if (assetForm?.get('purchasePrice')?.errors?.['min']) {
+                                                                                                                                                                                                                                                                                            <span class="error">Purchase Price must be at least 1.</span>
+                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                            } -->
 
 
                 </div>

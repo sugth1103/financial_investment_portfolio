@@ -1,11 +1,18 @@
 .error {
     color: red;
 }
-
+input {
+    height: 55px;
+    border-color: #949090;
+}
 .title {
     color: rgb(22, 110, 172)
 }
 
+mat-form-field {
+    width: 100% !important;
+    border-color: #ccc;
+}
 .toaster {
     width: 20%;
     padding: 6px;
