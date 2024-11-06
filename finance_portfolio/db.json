@@ -1,0 +1,398 @@
+{
+  "posts": [
+    {
+      "id": "e4d7",
+      "assetType": "Tata power",
+      "quantity": 10,
+      "purchasePrice": 425,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "cadc",
+      "assetType": "tata steel",
+      "quantity": 30,
+      "purchasePrice": 300,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "76f9",
+      "assetType": "Apple Inc",
+      "quantity": 39,
+      "purchasePrice": 1000,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "e661",
+      "assetType": "Mauriti",
+      "quantity": 20,
+      "purchasePrice": 1800,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "90a1",
+      "assetType": "sdsk",
+      "quantity": 2,
+      "purchasePrice": 2,
+      "date": "2024-12-31"
+    },
+    {
+      "id": "b949",
+      "assetType": "Indian oil",
+      "quantity": 20,
+      "purchasePrice": 3000,
+      "date": "2024-11-07"
+    },
+    {
+      "id": "da22",
+      "assetType": "jsj",
+      "quantity": 9,
+      "purchasePrice": 9,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "f18b",
+      "assetType": "Dell",
+      "quantity": 30,
+      "purchasePrice": 290,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "067b",
+      "assetType": "Tata motors",
+      "quantity": 873,
+      "purchasePrice": 20,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "d763",
+      "assetType": "windpower",
+      "quantity": 29,
+      "purchasePrice": 450,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "8b8f",
+      "assetType": "Suntv",
+      "quantity": 20,
+      "purchasePrice": 2389,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "b7f7",
+      "assetType": "Kalpaka Chemaical",
+      "quantity": 30,
+      "purchasePrice": 20000,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "4e2a",
+      "assetType": "taxi",
+      "quantity": 20,
+      "purchasePrice": 390,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "7e07",
+      "assetType": "Wolkswagen",
+      "quantity": 23,
+      "purchasePrice": 5678,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "9be3",
+      "assetType": "Hyndai",
+      "quantity": 23,
+      "purchasePrice": 246,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "5ca6",
+      "assetType": "LIC",
+      "quantity": 23,
+      "purchasePrice": 778,
+      "date": "2024-11-06"
+    },
+    {
+      "id": "24ed",
+      "assetType": "kajaria",
+      "quantity": 23,
+      "purchasePrice": 234,
+      "date": "2024-11-06"
+    }
+  ],
+  "assetAllocation": [
+    {
+      "assetType": "Stocks",
+      "percentage": 40,
+      "details": [
+        {
+          "name": "Apple Inc.",
+          "symbol": "AAPL",
+          "quantity": 100,
+          "currentValue": 15000
+        },
+        {
+          "name": "Microsoft Corp.",
+          "symbol": "MSFT",
+          "quantity": 50,
+          "currentValue": 10000
+        },
+        {
+          "name": "Amazon.com Inc.",
+          "symbol": "AMZN",
+          "quantity": 30,
+          "currentValue": 9000
+        },
+        {
+          "name": "Alphabet Inc.",
+          "symbol": "GOOGL",
+          "quantity": 20,
+          "currentValue": 8000
+        }
+      ]
+    },
+    {
+      "assetType": "Bonds",
+      "percentage": 30,
+      "details": [
+        {
+          "name": "US Treasury Bond",
+          "symbol": "USTB",
+          "quantity": 200,
+          "currentValue": 6000
+        },
+        {
+          "name": "Corporate Bond",
+          "symbol": "CORPB",
+          "quantity": 100,
+          "currentValue": 4000
+        },
+        {
+          "name": "Municipal Bond",
+          "symbol": "MUNIB",
+          "quantity": 150,
+          "currentValue": 4500
+        }
+      ]
+    },
+    {
+      "assetType": "Real Estate",
+      "percentage": 20,
+      "details": [
+        {
+          "name": "Rental Property",
+          "location": "New York",
+          "currentValue": 20000
+        },
+        {
+          "name": "Commercial Property",
+          "location": "San Francisco",
+          "currentValue": 15000
+        }
+      ]
+    },
+    {
+      "assetType": "Commodities",
+      "percentage": 10,
+      "details": [
+        {
+          "name": "Gold",
+          "symbol": "GOLD",
+          "quantity": 50,
+          "currentValue": 5000
+        },
+        {
+          "name": "Silver",
+          "symbol": "SILVER",
+          "quantity": 100,
+          "currentValue": 3000
+        }
+      ]
+    }
+  ],
+  "marketTrends": [
+    {
+      "date": "2023-01-01",
+      "trend": "upward",
+      "percentageChange": 1.5,
+      "details": {
+        "index": "S&P 500",
+        "value": 3800
+      }
+    },
+    {
+      "date": "2023-01-02",
+      "trend": "downward",
+      "percentageChange": -0.5,
+      "details": {
+        "index": "S&P 500",
+        "value": 3781
+      }
+    },
+    {
+      "date": "2023-01-03",
+      "trend": "upward",
+      "percentageChange": 2,
+      "details": {
+        "index": "S&P 500",
+        "value": 3856
+      }
+    },
+    {
+      "date": "2023-01-04",
+      "trend": "upward",
+      "percentageChange": 1.2,
+      "details": {
+        "index": "S&P 500",
+        "value": 3902
+      }
+    },
+    {
+      "date": "2023-01-05",
+      "trend": "downward",
+      "percentageChange": -1,
+      "details": {
+        "index": "S&P 500",
+        "value": 3863
+      }
+    },
+    {
+      "date": "2023-01-06",
+      "trend": "upward",
+      "percentageChange": 0.8,
+      "details": {
+        "index": "S&P 500",
+        "value": 3894
+      }
+    },
+    {
+      "date": "2023-01-07",
+      "trend": "downward",
+      "percentageChange": -0.3,
+      "details": {
+        "index": "S&P 500",
+        "value": 3882
+      }
+    },
+    {
+      "date": "2023-01-08",
+      "trend": "upward",
+      "percentageChange": 1.5,
+      "details": {
+        "index": "S&P 500",
+        "value": 3940
+      }
+    },
+    {
+      "date": "2023-01-09",
+      "trend": "downward",
+      "percentageChange": -0.7,
+      "details": {
+        "index": "S&P 500",
+        "value": 3912
+      }
+    },
+    {
+      "date": "2023-01-10",
+      "trend": "upward",
+      "percentageChange": 1,
+      "details": {
+        "index": "S&P 500",
+        "value": 3951
+      }
+    }
+  ],
+  "performanceMetrics": [
+    {
+      "metric": "CPU Usage",
+      "value": 75,
+      "unit": "%",
+      "timestamp": "2023-01-01T10:00:00Z"
+    },
+    {
+      "metric": "Memory Usage",
+      "value": 60,
+      "unit": "%",
+      "timestamp": "2023-01-01T10:00:00Z"
+    },
+    {
+      "metric": "Disk I/O",
+      "value": 120,
+      "unit": "MB/s",
+      "timestamp": "2023-01-01T10:00:00Z"
+    },
+    {
+      "metric": "Network Throughput",
+      "value": 300,
+      "unit": "Mbps",
+      "timestamp": "2023-01-01T10:00:00Z"
+    },
+    {
+      "metric": "CPU Usage",
+      "value": 80,
+      "unit": "%",
+      "timestamp": "2023-01-01T11:00:00Z"
+    },
+    {
+      "metric": "Memory Usage",
+      "value": 65,
+      "unit": "%",
+      "timestamp": "2023-01-01T11:00:00Z"
+    },
+    {
+      "metric": "Disk I/O",
+      "value": 130,
+      "unit": "MB/s",
+      "timestamp": "2023-01-01T11:00:00Z"
+    },
+    {
+      "metric": "Network Throughput",
+      "value": 320,
+      "unit": "Mbps",
+      "timestamp": "2023-01-01T11:00:00Z"
+    },
+    {
+      "metric": "CPU Usage",
+      "value": 70,
+      "unit": "%",
+      "timestamp": "2023-01-01T12:00:00Z"
+    },
+    {
+      "metric": "Memory Usage",
+      "value": 55,
+      "unit": "%",
+      "timestamp": "2023-01-01T12:00:00Z"
+    }
+  ],
+  "portFolioPerformance": {
+    "portfolioName": "Stocks",
+    "owner": "John Doe",
+    "lastUpdated": "2023-10-01",
+    "performanceData": {
+      "dates": [
+        "2023-01-01",
+        "2023-01-02",
+        "2023-01-03",
+        "2023-01-04",
+        "2023-01-05",
+        "2023-01-06"
+      ],
+      "portfolioPerformance": [
+        37,
+        125.5,
+        178,
+        67,
+        73,
+        139
+      ],
+      "benchmarkPerformance": [
+        110,
+        121,
+        105.8,
+        104,
+        134,
+        78.5
+      ]
+    }
+  }
+}

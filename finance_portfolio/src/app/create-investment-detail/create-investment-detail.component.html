@@ -1,0 +1,71 @@
+<h1 class="d-flex justify-content-center mt-4 title">Create Investment Details</h1>
+
+<form [formGroup]="assetForm" (ngSubmit)="onSubmit()">
+    <div calss="container">
+        <div class="row justify-content-md-center">
+            <div class="col-4">
+                <div class="mb-4">
+                    <label for="assetType" class="form-label"><strong>Asset Type <span
+                                class="error">*</span></strong></label>
+                    <input type="email" class="form-control" id="assetType" formControlName="assetType">
+                    @if (assetForm?.get('assetType')?.invalid && assetForm?.get('assetType')?.touched) {
+                    <div class="error">
+                        Asset Type is required.
+                    </div>
+                    }
+
+                </div>
+                <div class="mb-4">
+                    <label for="quantity" class="form-label"><strong>Quantity<span
+                                class="error">*</span></strong></label>
+                    <input type="number" class="form-control" id="quantity" formControlName="quantity">
+                    @if (assetForm?.get('quantity')?.invalid && assetForm?.get('quantity')?.touched) {
+                    @if (assetForm.get('quantity')?.errors?.['required']) {
+                    <span class="error">Quantity must be required.</span>
+                    }
+                    @if (assetForm?.get('quantity')?.errors?.['min']) {
+                    <span class="error">Quantity must be at least 1.</span>
+                    }
+
+                    }
+
+                </div>
+                <div class="mb-4">
+                    <label for="purchasePrice" class="form-label"><strong>Purchase Price<span
+                                class="error">*</span></strong></label>
+                    <input type="number" class="form-control" id="purchasePrice" formControlName="purchasePrice">
+                    @if (assetForm?.get('purchasePrice')?.invalid && assetForm?.get('purchasePrice')?.touched) {
+                    @if (assetForm.get('purchasePrice')?.errors?.['required']) {
+                    <span class="error">Purchase Price is required.</span>
+                    }
+                    @if (assetForm?.get('purchasePrice')?.errors?.['min']) {
+                    <span class="error">Purchase Price must be at least 1.</span>
+                    }
+
+                    }
+
+
+                </div>
+                <div class="mb-4">
+                    <label for="date" class="form-label"><strong> Date of Purchase<span
+                                class="error">*</span></strong></label>
+                    <input type="date" class="form-control" id="date" formControlName="date">
+                    @if (assetForm?.get('date')?.invalid && assetForm?.get('date')?.touched) {
+                    @if (assetForm.get('date')?.errors?.['required']) {
+                    <span class="error">Date is required.</span>
+                    }
+
+                    }
+
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg" [disabled]="assetForm.invalid">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+@if(success){
+<div class="toaster d-flex justify-content-center mt-4">Successfully Saved asset - {{assetDetail.assetType}}!!
+</div>
+}

@@ -1,0 +1,22 @@
+.error {
+    color: red;
+}
+
+.title {
+    color: rgb(22, 110, 172)
+}
+
+.toaster {
+    width: 20%;
+    padding: 6px;
+    background-color: rgb(68, 168, 68);
+    color: white;
+    border-radius: 6px;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}

@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    /* Adds space between rows */
+    align-items: center;
+    /* Center align the rows */
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    /* Set row width to 80% */
+    flex-wrap: nowrap;
+    /* Prevent items from wrapping */
+    justify-content: center;
+    /* Center align the content */
+    gap: 10px;
+    /* Adds space between items in a row */
+}
+
+h1 {
+    padding: 10px
+}
+
+.row:first-child .column {
+    flex: 1 1 100%;
+    /* First row has one column taking full width */
+}
+
+.row:last-child .column {
+    flex: 1 1 calc(50% - 10px);
+    /* Second row has two columns taking equal width minus the gap */
+    padding: 10px;
+}
+
+.column {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+@media (max-width: 1024px) {
+    canvas {
+        width: 100% !important;
+        /* Reduce chart size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .row:last-child {
+        flex-wrap: wrap;
+        /* Allow wrapping on small screens */
+    }
+
+    .row:last-child .column {
+        flex: 1 1 100%;
+        /* Stacks columns vertically on small screens */
+    }
+
+    canvas {
+        width: 100% !important;
+        /* Reduce chart size for mobile devices */
+    }
+}
